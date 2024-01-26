@@ -8,10 +8,8 @@ def index(request):
 
 
 def about(request):
-    return HttpResponse(" <a href='/rango/'>Index</a>")
-    #context_dict = {}
-    #response = render(request, 'rango/about.html', context_dict)
-    #return response
-
+    #return HttpResponse("<a href='/rango/'>Index</a>")
+    context_dict = {}
+    return render(request, 'rango/about.html', context_dict)
 
 
