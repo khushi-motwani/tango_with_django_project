@@ -1,8 +1,10 @@
 {% extends 'rango/base.html' %}
 {% load staticfiles %}
+
 {% block title_block %}
     Add a Category
 {% endblock %}
+
 {% block body_block %}
     <div>
         <form id="category_form" method="POST" action={% url 'rango:add_category' %}>
